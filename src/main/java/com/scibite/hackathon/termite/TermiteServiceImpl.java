@@ -3,21 +3,10 @@ package com.scibite.hackathon.termite;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
 import com.scibite.hackathon.AbstractHackathonService;
-import com.scibite.hackathon.WordSimilarity;
 import com.scibite.termitej.common.hit.THit;
 import org.apache.http.HttpResponse;
-import org.json.JSONObject;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.Base64;
-import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
 /**
