@@ -23,15 +23,15 @@ public class TermiteServiceImpl extends AbstractSciBiteService implements Termit
      * @throws Exception
      */
     public List<THit> termite(String inputData) throws Exception {
-        TermiteHackathonClient client = new TermiteHackathonClient();
+        BasicTermiteClient client = new BasicTermiteClient();
         client.setHost(TERMITE_API_ENDPOINT);
 
         // Set some text
-        client.setParameter(TermiteHackathonClient.PARAM_TEXT, inputData);
-        client.setParameter(TermiteHackathonClient.PARAM_OUTPUT_FORMAT, "json");
+        client.setParameter(BasicTermiteClient.PARAM_TEXT, inputData);
+        client.setParameter(BasicTermiteClient.PARAM_OUTPUT_FORMAT, "json");
 
         HttpResponse r = client.execute();
-        String json = TermiteHackathonClient.getContent(r);
+        String json = BasicTermiteClient.getContent(r);
 
         Object document = Configuration.defaultConfiguration().jsonProvider().parse(json);
 
@@ -47,17 +47,17 @@ public class TermiteServiceImpl extends AbstractSciBiteService implements Termit
      * @throws Exception
      */
     public List<THit> termite(File file) throws Exception{
-        TermiteHackathonClient cl = new TermiteHackathonClient();
+        BasicTermiteClient cl = new BasicTermiteClient();
 
         //cl.setHost("http://localhost:9090/termite");
         cl.setHost(TERMITE_API_ENDPOINT);
 
         // Set some text
         cl.addFile(file);
-        cl.setParameter(TermiteHackathonClient.PARAM_OUTPUT_FORMAT, "json");
+        cl.setParameter(BasicTermiteClient.PARAM_OUTPUT_FORMAT, "json");
 
         HttpResponse r = cl.execute();
-        String json = TermiteHackathonClient.getContent(r);
+        String json = BasicTermiteClient.getContent(r);
 
         Object document = Configuration.defaultConfiguration().jsonProvider().parse(json);
 

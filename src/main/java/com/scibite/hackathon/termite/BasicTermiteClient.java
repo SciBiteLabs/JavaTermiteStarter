@@ -28,7 +28,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class TermiteHackathonClient {
+public class BasicTermiteClient {
     public static final String PARAM_TEXT = "text";
     public static final String PARAM_INPUT_FORMAT = "format";
     public static final String PARAM_OUTPUT_FORMAT = "output";
@@ -45,7 +45,7 @@ public class TermiteHackathonClient {
     private byte[] uploadData;
     private String uploadUri;
 
-    public TermiteHackathonClient() {
+    public BasicTermiteClient() {
     }
 
     public void addFile(File f) throws FileNotFoundException, IOException {
