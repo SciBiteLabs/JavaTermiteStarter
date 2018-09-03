@@ -1,5 +1,6 @@
-package com.scibite.hackathon;
+package com.scibite.hackathon.similarity;
 
+import com.scibite.hackathon.AbstractSciBiteService;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -16,7 +17,7 @@ import java.util.List;
 /**
  * This class was created by simon on 03/09/2018.
  */
-public class SimilarityServiceImpl extends AbstractHackathonService implements SimilarityService {
+public class SimilarityServiceImpl extends AbstractSciBiteService implements SimilarityService {
 
 
 

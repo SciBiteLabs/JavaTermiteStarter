@@ -1,4 +1,4 @@
-package com.scibite.hackathon;
+package com.scibite.hackathon.similarity;
 
 import java.util.Objects;
 

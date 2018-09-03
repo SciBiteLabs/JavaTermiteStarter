@@ -12,7 +12,7 @@ import java.security.cert.X509Certificate;
 /**
  * This class was created by simon on 03/09/2018.
  */
-public class AbstractHackathonService {
+public class AbstractSciBiteService {
 
     protected static final String userName = "hacker";
     protected static final String password = "g347regdsuxSW";

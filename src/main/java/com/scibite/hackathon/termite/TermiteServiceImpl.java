@@ -2,7 +2,7 @@ package com.scibite.hackathon.termite;
 
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
-import com.scibite.hackathon.AbstractHackathonService;
+import com.scibite.hackathon.AbstractSciBiteService;
 import com.scibite.termitej.common.hit.THit;
 import org.apache.http.HttpResponse;
 
@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * This class was created by simon on 03/09/2018.
  */
-public class TermiteServiceImpl extends AbstractHackathonService implements TermiteService {
+public class TermiteServiceImpl extends AbstractSciBiteService implements TermiteService {
 
     private static final String TERMITE_API_ENDPOINT = "https://109.74.206.246/termite";
 
