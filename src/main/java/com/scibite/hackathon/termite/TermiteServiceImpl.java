@@ -68,8 +68,9 @@ public class TermiteServiceImpl extends AbstractHackathonService implements Term
 
     public static void main(String[] args) throws Exception {
         TermiteServiceImpl termiteService = new TermiteServiceImpl();
-        //termiteService.termite("viagra or sildenafil are two Termite hits");
 
+
+        //termiteService.termite("viagra or sildenafil are two Termite hits");
         termiteService.termite(new File("./src/resources/termiteTestFile.txt"));
     }
 
